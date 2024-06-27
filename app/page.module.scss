@@ -1,0 +1,81 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 70%;
+  font-family: Times New Roman, Times, serif;
+  width: 100%;
+
+  & h3 {
+    text-decoration: underline;
+    display: inline-block;
+    background-color: yellow;
+    text-transform: uppercase;
+  }
+}
+
+.imagesWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  // flex-wrap: wrap;
+  // width: 50%;
+}
+
+.mainImages {
+  width: 100%;
+  height: 20rem;
+  max-width: 20rem;
+}
+
+.headshot {
+  border: 25px solid black;
+}
+
+.experience {
+  // align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactHeader {
+  margin-bottom: 0.5rem;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.facebook {
+  font-size: 2rem;
+  color: black;
+  &:hover {
+    color: yellow;
+    background-color: black;
+  }
+}
+
+.familypic {
+  padding: 0 2rem;
+}
