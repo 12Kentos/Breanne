@@ -12,9 +12,73 @@
   & h3 {
     text-decoration: underline;
     display: inline-block;
-    background-color: yellow;
     text-transform: uppercase;
+    font-size: 2rem;
   }
+
+  & h2 {
+    text-align: center;
+  }
+
+  & a {
+    color: black;
+    &:hover {
+      color: yellow;
+      background-color: black;
+    }
+  }
+}
+
+.header {
+  background-image: url(./images/WasatchThree.PNG);
+  width: 100vw;
+  height: 45vh;
+  transform: translateY(-2rem);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerInside {
+  color: #fff;
+  font-family: Times New Roman, Times, serif;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(9, 23, 46, 0.479);
+  display: inline-block;
+  text-align: center;
+  margin: 0 1rem;
+  max-width: 70%;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.mainHeading {
+  text-decoration: underline;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.familyPicWrapper {
+  padding: 0 2rem;
+  object-fit: contain;
+}
+
+.familyPic {
+  width: 100%;
+  height: 100%;
+}
+
+.breanneInfo {
+  line-height: 1.5;
+  font-family: Times New Roman, Times, serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
 }
 
 .imagesWrapper {
@@ -22,24 +86,42 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  // flex-wrap: wrap;
-  // width: 50%;
-}
-
-.mainImages {
-  width: 100%;
-  height: 20rem;
-  max-width: 20rem;
 }
 
 .headshot {
   border: 25px solid black;
 }
 
-.experience {
-  // align-self: flex-start;
+.quoteWrapper {
+  padding: 0 2rem;
+}
+
+.whyInfo {
+  max-width: 60%;
+}
+
+.firstImage {
+  width: 100%;
+  height: 100%;
+  max-width: 20rem;
+  max-height: 20rem;
+  min-height: 20rem;
+  min-width: 20rem;
+}
+
+.whyExperience {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.contentWrapper {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -76,6 +158,33 @@
   }
 }
 
-.familypic {
-  padding: 0 2rem;
+@media (max-width: 75em) {
+  .mainWrapper {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .mainWrapper {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .whyExperience {
+    flex-direction: column-reverse;
+  }
+
+  .whyInfo {
+    max-width: 100%;
+  }
+
+  .whyExperienceReverse {
+    flex-direction: column;
+  }
+
+  .firstImage {
+    min-height: 13rem;
+    min-width: 13rem;
+  }
 }
