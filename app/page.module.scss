@@ -23,14 +23,16 @@
   & a {
     color: black;
     &:hover {
-      color: yellow;
+      color: rgb(249, 208, 44);
       background-color: black;
     }
   }
 }
 
 .header {
-  background-image: url(./images/WasatchThree.PNG);
+  // background-image: url(./images/WasatchThree.PNG);
+  background-color: rgb(255, 230, 0);
+  background-color: rgb(249, 208, 44);
   width: 100vw;
   height: 45vh;
   transform: translateY(-2rem);
@@ -47,14 +49,33 @@
 .headerInside {
   color: #fff;
   font-family: Times New Roman, Times, serif;
-  font-size: 2rem;
+  // font-size: 2rem;
   padding: 0.5rem;
-  background-color: rgba(9, 23, 46, 0.479);
+  // background-color: rgba(9, 23, 46, 0.418);
+  width: 100%;
   display: inline-block;
   text-align: center;
   margin: 0 1rem;
   max-width: 70%;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.firstName {
+  background-color: #000;
+}
+
+.lastName {
+  background-color: rgba(0, 0, 0, 0.005);
+  color: rgb(255, 255, 255);
+}
+
+.position {
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+.seat {
+  font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .mainHeading {
@@ -119,6 +140,7 @@
 }
 
 .contentWrapper {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -126,13 +148,36 @@
 }
 
 .infoWrapper {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
+.news {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  & h4 {
+    text-decoration: underline;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 .contact {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +198,7 @@
   font-size: 2rem;
   color: black;
   &:hover {
-    color: yellow;
+    color: rgb(249, 208, 44);
     background-color: black;
   }
 }

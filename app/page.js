@@ -12,10 +12,20 @@ export default function Home() {
     <main className={styles.mainWrapper}>
       <header className={styles.header}>
         <div className={styles.headerInside}>
+          <h1 className={styles.firstName}>Breanne</h1>
+          <h1 className={styles.lastName}>Dedrickson</h1>
+          <div className={styles.position}>
+            <p className={styles.wasatch}>Wasatch County School Board</p>
+            <p className={styles.seat}>Seat G County South</p>
+          </div>
+        </div>
+      </header>
+      {/* <header className={styles.header}>
+        <div className={styles.headerInside}>
           <h1>Breanne Dedrickson</h1>
           <h2>Candidate for Wasatch County School Board</h2>
         </div>
-      </header>
+      </header> */}
       {/* <div className={styles.imagesWrapper}>
         <Image
           src={Headshot}
@@ -37,8 +47,8 @@ export default function Home() {
         experience to Cuernavaca, Mexico and student teaching at Logan High
         School, Breanne was hired to teach 9-10th grade English, ACT Prep, and
         English Language Learner classes at Wasatch High School. After spending
-        three years teaching as Ms. Davis, Breanne got set up on a blind date
-        and found the true love of her life, Andrew Dedrickson. Ms. Davis became
+        three years teaching as Ms. Davis, Breanne went on a blind date and
+        found the true love of her life, Andrew Dedrickson. Ms. Davis became
         Mrs. Dedrickson. Fast forward 14 years, Andrew and Breanne Dedrickson
         now have four kids, two lambs, one dog, one pony, and lots of goldfish!
         Breanne loves mint Oreo ice cream, four-wheeling, pedicures, traveling
@@ -67,21 +77,42 @@ export default function Home() {
           <div>
             <Image src={quoteTwo} className={styles.firstImage} />
           </div>
-          <p className={styles.whyInfo}>
-            I am running for school board because I am passionate about high
-            quality, comprehensive education and academic achievement – both for
-            my own four children and all children in this valley. I have been
-            involved in education as an educator and parent. Now, I want to be
-            involved as a policymaker to ensure Wasatch County School District
-            has the policies, resources, and supports in place to provide the
-            best educational experience for all kids in a fiscally responsible
-            and transparent way. Teacher retention and compensation,
-            research-based/job- embedded professional development,
+          {/* <p className={styles.whyInfo}>
+            Breanne is running for school board because she is passionate about
+            high quality, comprehensive education and academic achievement –
+            both for her own four children and all children in this valley.
+            Breanne has been involved in education as an educator and parent.
+            Now, she want's to be involved as a policymaker to ensure Wasatch
+            County School District has the policies, resources, and supports in
+            place to provide the best educational experience for all kids in a
+            fiscally responsible and transparent way. Teacher retention and
+            compensation, research-based/job- embedded professional development,
             interactive/engaging curriculum, open communication, and
-            safe/appropriate school facilities are my priorities. I have a
-            proven track record in this district. I have vision and the courage
-            to do what is best for students, educators, and the community. I
-            want to represent YOU. I’d love your vote and support.
+            safe/appropriate school facilities are her priorities. She has a
+            proven track record in this district. Breanne has vision and the
+            courage to do what is best for students, educators, and the
+            community.
+            <br />
+            <br />
+            "I want to represent YOU. I’d love your vote and support." - Breanne
+          </p> */}
+          <p className={styles.whyInfo}>
+            Breanne is running for school board because she is passionate about
+            high quality, comprehensive education and academic achievement –
+            both for her own four children and all children in this valley. She
+            has been deeply involved in education as both an educator and a
+            parent. Now, Breanne aims to contribute as a policymaker to ensure
+            Wasatch County School District implements policies, allocates
+            resources, and provides necessary supports to deliver the best
+            educational experience for every child in a financially responsible
+            and transparent manner. Her priorities include teacher retention and
+            compensation, research-based and job-embedded professional
+            development, interactive and engaging curriculum, open
+            communication, and ensuring safe and appropriate school facilities.
+            With a proven track record in the district, Breanne possesses the
+            vision and courage to advocate for what benefits students,
+            educators, and the community. She seeks to represent the
+            constituents effectively and welcomes their vote and support.
           </p>
         </div>
       </div>
@@ -126,6 +157,21 @@ export default function Home() {
           </li>
           <li>Reading Level 1 Endorsement</li>
           <li>Study Abroad: Cuernavaca, Mexico</li>
+        </ul>
+      </div>
+      <div className={styles.news}>
+        <h4>Breanne in the News</h4>
+        <ul>
+          <li>
+            <a href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats">
+              https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
+            </a>
+          </li>
+          <li>
+            <a href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/">
+              https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
+            </a>
+          </li>
         </ul>
       </div>
       <div className={styles.contact}>
