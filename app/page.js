@@ -36,7 +36,7 @@ export default function Home() {
       <h1 className={styles.mainHeading}>Who is Breanne?</h1>
 
       <div className={styles.familyPicWrapper}>
-        <Image src={family} className={styles.familyPic} />
+        <Image src={family} className={styles.familyPic} alt="Family Photo" />
       </div>
 
       <p className={styles.breanneInfo}>
@@ -72,10 +72,14 @@ export default function Home() {
       </p>
 
       <div className={styles.contentWrapper}>
-        <h3 className={styles.whyTitle}>Why</h3>
+        <h2 className={styles.whyTitle}>Why</h2>
         <div className={styles.whyExperience}>
           <div>
-            <Image src={quoteTwo} className={styles.firstImage} />
+            <Image
+              src={quoteTwo}
+              className={styles.firstImage}
+              alt="Learning Quote: Learning is not attained by chance, it must be sought for with ardor and attended to with diligence. -Abigail Adams"
+            />
           </div>
           {/* <p className={styles.whyInfo}>
             Breanne is running for school board because she is passionate about
@@ -140,7 +144,11 @@ export default function Home() {
             <li>Cognia Accreditation Evaluation Team Member</li>
           </ul>
           <div className={styles.quoteWrapper}>
-            <Image src={quoteOne} className={styles.firstImage} />
+            <Image
+              src={quoteOne}
+              className={styles.firstImage}
+              alt="Education Quote: Education is the most powerful weapon which you can use to change the world. -Nelson Mandela"
+            />
           </div>
         </div>
       </div>
@@ -230,7 +238,7 @@ export default function Home() {
       </div>
       <div className={styles.eduNews}>
         <div className={styles.infoWrapper}>
-          <h3>Education</h3>
+          <h2>Education</h2>
           <ul>
             <li>
               Master of Education in Educational Leadership and Policy with
@@ -245,15 +253,21 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.news}>
-          <h4>Breanne in the News</h4>
+          <h2>Breanne in the News</h2>
           <ul>
             <li>
-              <a href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats">
+              <a
+                href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats"
+                target="_blank"
+              >
                 https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
               </a>
             </li>
             <li>
-              <a href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/">
+              <a
+                href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/"
+                target="_blank"
+              >
                 https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
               </a>
             </li>
