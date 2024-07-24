@@ -72,7 +72,7 @@ export default function Home() {
       </p>
 
       <div className={styles.contentWrapper}>
-        <h3>Why</h3>
+        <h3 className={styles.whyTitle}>Why</h3>
         <div className={styles.whyExperience}>
           <div>
             <Image src={quoteTwo} className={styles.firstImage} />
@@ -144,35 +144,121 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.infoWrapper}>
-        <h3>Education</h3>
-        <ul>
+      <div className={styles.valleyLifeMag}>
+        <h2>Breanne's answers for Valley Life Magazine Fall Issue</h2>
+        <ul className={styles.valleyLifeMagUl}>
           <li>
-            Master of Education in Educational Leadership and Policy with
-            Administrative License
+            <p className={styles.question}>
+              Tell us about yourself, background, education and teaching
+              experiences, and career path.
+            </p>
+            <p className={styles.answer}>
+              I am a former Wasatch High School English teacher, Timpanogos
+              Intermediate School assistant principal and current Liahona
+              Preparatory Academy principal. I earned a Bachelor of Science in
+              English Teaching from Utah State University and a Master of
+              Education in Educational Leadership and Policy from the University
+              of Utah. I am the mother of four wonderful children, and I love
+              volunteering in their classrooms. I am active in the Wasatch
+              Parent Network and serve on the Daniel Canyon Elementary School
+              Community Council. I also served on the Wasatch County School
+              District’s Safe Schools Committee and Future Schools Committee. I
+              am running for school board because I am passionate about high
+              quality, comprehensive education and academic achievement. I want
+              to ensure Wasatch County School District has the policies and
+              resources in place to provide the best educational experience for
+              all children in a fiscally responsible and transparent way.
+            </p>
           </li>
           <li>
-            Bachelor of Science with English Teaching Emphasis (English Major
-            &amp; ESL Minor)
+            <p className={styles.question}>
+              What is the most important issue facing Wasatch County School
+              District and what can you do as a board member about it?
+            </p>
+            <p className={styles.answer}>
+              Two important issues facing Wasatch County School District are
+              growth and attracting and retaining high quality educators. First,
+              to address growth, I will have the courage and creativity to
+              provide safe, appropriate, up-to-date, educationally conducive
+              spaces for students to learn in. I will use data and open
+              communication to evaluate needs, build community consensus, and
+              make decisions that are best for students, educators, and the
+              community. I would like to implement policies, so the long-term
+              plan to accommodate growth is transparent and expected.
+              Collaboration with community leaders is also important. Second,
+              for attracting and retaining high quality educators, I will be a
+              proponent for fair compensation and benefits to ensure we can hire
+              and keep top-notch employees. This means I will support and vote
+              for a budget that allocates the majority of its money to salaries
+              and benefits. Continuing to fully fund benefits and staying
+              competitive in the salary market is a priority for me because high
+              quality teachers directly impact student achievement.
+            </p>
           </li>
-          <li>Reading Level 1 Endorsement</li>
-          <li>Study Abroad: Cuernavaca, Mexico</li>
+          <li>
+            <p className={styles.question}>
+              What is one of your strengths when working with a group?
+            </p>
+            <p className={styles.answer}>
+              I am an excellent communicator. I have learned the value of
+              listening to all perspectives to ensure I am fully informed. I
+              listen with respect, value the contributions of others, and have
+              empathy. I ask questions for clarity and accountability. I have
+              the courage to speak up, contribute, and engage in critical
+              conversations. With honest, clear, responsive, and respectful
+              dialogue, I have found groups function more effectively and
+              efficiently.
+            </p>
+          </li>
+          <li>
+            <p className={styles.question}>
+              What is the purpose of a school board in a community?
+            </p>
+            <p className={styles.answer}>
+              “A local school board shall make and enforce policies necessary
+              for the control and management of the district schools” (Utah Code
+              Section 53G-4-402). U.S. News &amp; World Report (2023) further
+              explains, “school boards have three major responsibilities:
+              developing the annual budget to run the school system; setting
+              school policies; and hiring and evaluating the superintendent.” It
+              is also the role of the board to ask questions, assess progress,
+              listen to all sides, represent the community, and do what is best
+              for students.
+            </p>
+          </li>
         </ul>
       </div>
-      <div className={styles.news}>
-        <h4>Breanne in the News</h4>
-        <ul>
-          <li>
-            <a href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats">
-              https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
-            </a>
-          </li>
-          <li>
-            <a href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/">
-              https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
-            </a>
-          </li>
-        </ul>
+      <div className={styles.eduNews}>
+        <div className={styles.infoWrapper}>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              Master of Education in Educational Leadership and Policy with
+              Administrative License
+            </li>
+            <li>
+              Bachelor of Science with English Teaching Emphasis (English Major
+              &amp; ESL Minor)
+            </li>
+            <li>Reading Level 1 Endorsement</li>
+            <li>Study Abroad: Cuernavaca, Mexico</li>
+          </ul>
+        </div>
+        <div className={styles.news}>
+          <h4>Breanne in the News</h4>
+          <ul>
+            <li>
+              <a href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats">
+                https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
+              </a>
+            </li>
+            <li>
+              <a href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/">
+                https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className={styles.contact}>
         <h3 className={styles.contactHeader}>Contact</h3>

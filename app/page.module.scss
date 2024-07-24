@@ -24,14 +24,14 @@
     color: black;
     &:hover {
       color: rgb(249, 208, 44);
-      background-color: black;
+      // background-color: black;
     }
   }
 }
 
 .header {
   // background-image: url(./images/WasatchThree.PNG);
-  background-color: rgb(255, 230, 0);
+  // background-color: rgb(255, 230, 0);
   background-color: rgb(249, 208, 44);
   width: 100vw;
   height: 45vh;
@@ -117,6 +117,10 @@
   padding: 0 2rem;
 }
 
+// .whyTitle {
+//   color: rgb(249, 208, 44);
+// }
+
 .whyInfo {
   max-width: 60%;
 }
@@ -167,6 +171,7 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
+    text-align: center;
   }
 
   & ul {
@@ -174,6 +179,45 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+.valleyLifeMag {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h2 {
+    text-decoration: underline;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.valleyLifeMagUl {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.question {
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.answer {
+  line-height: 1.5;
+}
+
+.eduNews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .contact {
@@ -199,7 +243,7 @@
   color: black;
   &:hover {
     color: rgb(249, 208, 44);
-    background-color: black;
+    // background-color: black;
   }
 }
 
@@ -231,5 +275,11 @@
   .firstImage {
     min-height: 13rem;
     min-width: 13rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .eduNews {
+    grid-template-columns: 1fr;
   }
 }
