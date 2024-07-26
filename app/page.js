@@ -61,18 +61,20 @@ export default function Home() {
         Breanne was the assistant principal at Timpanogos Intermediate School
         for two years and has been the principal at Liahona Preparatory Academy
         for the last nine years. Breanne is an involved parent who has served in
-        her children's school as a School/Community Council member and Wasatch
+        her children's school as a school community Council member and Wasatch
         Parent Network volunteer. She's served at the district level as a
         committee member on the Safe Schools and Future Schools committees. She
         was also active in coordinating community efforts to support the first
         bond for the new high school. Breanne is a passionate educator and
         parent with a proven track record. She now wants to be involved as a
-        policy maker to influence Wasatch County schools for good. Breanne would
+        policymaker to influence Wasatch County schools for good. Breanne would
         love your vote of support in November!
       </p>
 
       <div className={styles.contentWrapper}>
-        <h2 className={styles.whyTitle}>Why</h2>
+        <h2 className={styles.whyTitle}>
+          Why is Breanne running for school board?
+        </h2>
         <div className={styles.whyExperience}>
           <div>
             <Image
@@ -119,9 +121,10 @@ export default function Home() {
             constituents effectively and welcomes their vote and support.
           </p>
         </div>
+        <Link href={`files/Valley.pdf`}>Testing Link</Link>
       </div>
       <div className={styles.contentWrapper}>
-        <h3>Experience</h3>
+        <h3>Breanne's Experience</h3>
         <div
           className={`${styles.whyExperience} ${styles.whyExperienceReverse}`}
         >
