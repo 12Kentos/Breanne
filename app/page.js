@@ -4,9 +4,9 @@ import Image from "next/image";
 import quoteOne from "./images/Flyer Quote 2.PNG";
 import quoteTwo from "./images/Flyer Quote.PNG";
 // import quoteThree from "./images/Flyer Quote 3.PNG";
-import testingTwo from "./images/Flyer Quote 3.PNG";
+import newQuote from "./images/newQuote.PNG";
 // import quoteFour from "./images/Flyer Quote 4.PNG";
-import testing from "./images/Flyer Quote 4.PNG";
+// import testing from "./images/Flyer Quote 4.PNG";
 import Headshot from "./images/Headshot.jpg";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -154,7 +154,7 @@ export default function Home() {
           </ul>
           <div className={styles.quoteWrapper}>
             <Image
-              src={testingTwo}
+              src={newQuote}
               className={styles.firstImage}
               alt="Education Quote: Education is the most powerful weapon which you can use to change the world. -Nelson Mandela"
             />
