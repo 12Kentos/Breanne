@@ -1,13 +1,13 @@
 import styles from "./page.module.scss";
-import family from "./images/Family.JPG";
+import family from "../public/images/Family.JPG";
 import Image from "next/image";
-import quoteOne from "./images/Flyer Quote 2.PNG";
-import quoteTwo from "./images/Flyer Quote.PNG";
+import quoteOne from "../public/images/Flyer Quote 2.PNG";
+import quoteTwo from "../public/images/Flyer Quote.PNG";
 // import quoteThree from "./images/Flyer Quote 3.PNG";
-import newQuote from "./images/newQuote.PNG";
+import newQuote from "../public/images/newQuote.PNG";
 // import quoteFour from "./images/Flyer Quote 4.PNG";
 // import testing from "./images/Flyer Quote 4.PNG";
-import Headshot from "./images/Headshot.jpg";
+import Headshot from "../public/images/Headshot.jpg";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 
