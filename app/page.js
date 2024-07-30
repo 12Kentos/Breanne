@@ -3,6 +3,8 @@ import family from "./images/Family.JPG";
 import Image from "next/image";
 import quoteOne from "./images/Flyer Quote 2.PNG";
 import quoteTwo from "./images/Flyer Quote.PNG";
+import quoteThree from "./images/Flyer Quote 3.PNG";
+import quoteFour from "./images/Flyer Quote 4.PNG";
 import Headshot from "./images/Headshot.jpg";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -121,9 +123,9 @@ export default function Home() {
             constituents effectively and welcomes their vote and support.
           </p>
         </div>
-        <a href="/files/Valley.pdf" download={false} target="_blank">
+        {/* <a href="/files/Valley.pdf" download={false} target="_blank">
           Testing Link
-        </a>
+        </a> */}
       </div>
       <div className={styles.contentWrapper}>
         <h3>Breanne's Experience</h3>
@@ -150,14 +152,14 @@ export default function Home() {
           </ul>
           <div className={styles.quoteWrapper}>
             <Image
-              src={quoteOne}
+              src={quoteThree}
               className={styles.firstImage}
               alt="Education Quote: Education is the most powerful weapon which you can use to change the world. -Nelson Mandela"
             />
           </div>
         </div>
       </div>
-      <div className={styles.valleyLifeMag}>
+      {/* <div className={styles.valleyLifeMag}>
         <h2>Breanne's answers for Valley Life Magazine Fall Issue</h2>
         <ul className={styles.valleyLifeMagUl}>
           <li>
@@ -240,24 +242,74 @@ export default function Home() {
             </p>
           </li>
         </ul>
-      </div>
+      </div> */}
+
       <div className={styles.eduNews}>
-        <div className={styles.infoWrapper}>
-          <h2>Education</h2>
-          <ul>
-            <li>
-              Master of Education in Educational Leadership and Policy with
-              Administrative License
-            </li>
-            <li>
-              Bachelor of Science with English Teaching Emphasis (English Major
-              &amp; ESL Minor)
-            </li>
-            <li>Reading Level 1 Endorsement</li>
-            <li>Study Abroad: Cuernavaca, Mexico</li>
-          </ul>
+        <div className={`${styles.quoteWrapper} ${styles.lastImg}`}>
+          <Image
+            src={quoteOne}
+            className={styles.firstImage}
+            alt="Education Quote: An Investment in knowledge pays the best interest. -Benjamin Franklin"
+          />
         </div>
-        <div className={styles.news}>
+        <div>
+          <div className={styles.infoWrapper}>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                Master of Education in Educational Leadership and Policy with
+                Administrative License
+              </li>
+              <li>
+                Bachelor of Science with English Teaching Emphasis (English
+                Major &amp; ESL Minor)
+              </li>
+              <li>Reading Level 1 Endorsement</li>
+              <li>Study Abroad: Cuernavaca, Mexico</li>
+            </ul>
+          </div>
+          <div className={styles.news}>
+            <h2>Breanne in the News</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats"
+                  target="_blank"
+                >
+                  https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/"
+                  target="_blank"
+                >
+                  https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.questionnaires}>
+            <h2>Breanne's Questionnaires</h2>
+            <a
+              href="/files/Valley.pdf"
+              download={false}
+              target="_blank"
+              className={styles.questionnairesLinks}
+            >
+              Heber Valley Life
+            </a>
+            <a
+              href="/files/School Board.pdf"
+              download={false}
+              target="_blank"
+              className={styles.questionnairesLinks}
+            >
+              School Board
+            </a>
+          </div>
+        </div>
+        {/* <div className={styles.news}>
           <h2>Breanne in the News</h2>
           <ul>
             <li>
@@ -277,7 +329,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className={styles.contact}>
         <h3 className={styles.contactHeader}>Contact</h3>

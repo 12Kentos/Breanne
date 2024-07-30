@@ -21,6 +21,7 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
+    text-align: center;
   }
 
   & a {
@@ -155,7 +156,7 @@
 }
 
 .infoWrapper {
-  margin-top: 2rem;
+  // margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +182,19 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+.questionnaires {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  &Links {
+    font-size: 1.5rem;
   }
 }
 
@@ -219,8 +233,12 @@
 .eduNews {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+  margin-top: 2rem;
+  // margin-bottom: 2rem;
 }
 
 .contact {
@@ -281,8 +299,12 @@
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .eduNews {
     grid-template-columns: 1fr;
+  }
+
+  .lastImg {
+    grid-row: 2/3;
   }
 }
