@@ -4,7 +4,7 @@ import Image from "next/image";
 import quoteOne from "../public/images/Flyer Quote 2.PNG";
 import quoteTwo from "../public/images/Flyer Quote.PNG";
 // import quoteThree from "./images/Flyer Quote 3.PNG";
-import newQuote from "../public/images/newQuote.PNG";
+import newQuote from "../public/images/newQuote.png";
 // import quoteFour from "./images/Flyer Quote 4.PNG";
 // import testing from "./images/Flyer Quote 4.PNG";
 import Headshot from "../public/images/Headshot.jpg";
