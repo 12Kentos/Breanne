@@ -121,7 +121,9 @@ export default function Home() {
             constituents effectively and welcomes their vote and support.
           </p>
         </div>
-        <Link href={`files/Valley.pdf`}>Testing Link</Link>
+        <a href="/files/Valley.pdf" download={false} target="_blank">
+          Testing Link
+        </a>
       </div>
       <div className={styles.contentWrapper}>
         <h3>Breanne's Experience</h3>
