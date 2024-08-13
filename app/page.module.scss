@@ -6,6 +6,7 @@
   gap: 2rem;
   padding: 2rem;
   max-width: 70%;
+  // max-width: 1300px;
   font-family: Times New Roman, Times, serif;
   width: 100%;
 
@@ -20,7 +21,7 @@
     text-decoration: underline;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     text-align: center;
   }
 
@@ -28,15 +29,21 @@
     color: black;
     &:hover {
       color: rgb(249, 208, 44);
-      // background-color: black;
     }
+  }
+
+  & ul {
+    margin-left: 1rem;
   }
 }
 
 .header {
-  // background-image: url(./images/WasatchThree.PNG);
-  // background-color: rgb(255, 230, 0);
-  background-color: rgb(249, 208, 44);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../public/images/WasatchThree.PNG);
   width: 100vw;
   height: 45vh;
   transform: translateY(-2rem);
@@ -53,15 +60,15 @@
 .headerInside {
   color: #fff;
   font-family: Times New Roman, Times, serif;
-  // font-size: 2rem;
-  padding: 0.5rem;
-  // background-color: rgba(9, 23, 46, 0.418);
-  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
   display: inline-block;
   text-align: center;
   margin: 0 1rem;
-  max-width: 70%;
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  // max-width: 70%;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  border-radius: 0.5rem;
 }
 
 .firstName {
@@ -91,19 +98,30 @@
 }
 
 .familyPicWrapper {
-  // padding: 0 2rem;
-  object-fit: contain;
+  // object-fit: contain;
+  // width: 100%;
+  // justify-self: center;
+  // align-self: center;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .familyPic {
+  // max-width: 100%;
   width: 100%;
-  height: 100%;
+  // max-height: 100%;
+  border-radius: 0.5rem;
+  // object-fit: contain;
+  // overflow: hidden;
 }
 
 .breanneInfo {
   line-height: 1.5;
   font-family: Times New Roman, Times, serif;
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  max-width: 50vw;
+  padding-right: 2rem;
 }
 
 .imagesWrapper {
@@ -117,16 +135,8 @@
   border: 25px solid black;
 }
 
-.quoteWrapper {
-  padding: 0 2rem;
-}
-
 .whyTitle {
   text-align: center;
-}
-
-.whyInfo {
-  max-width: 60%;
 }
 
 .firstImage {
@@ -136,23 +146,28 @@
   max-height: 20rem;
   min-height: 20rem;
   min-width: 20rem;
+  border-radius: 0.5rem;
 }
 
 .whyExperience {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  justify-content: center;
+  gap: 3rem;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  width: 100%;
 }
 
 .contentWrapper {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .infoWrapper {
@@ -189,12 +204,13 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   gap: 1rem;
 
   &Links {
     font-size: 1.5rem;
+    // text-align: center;
   }
 }
 
@@ -231,14 +247,23 @@
 }
 
 .eduNews {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
-  margin-top: 2rem;
-  // margin-bottom: 2rem;
+  // padding: 0 1rem;
+  // margin-top: 2rem;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.rightInfo {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: flex-start;
 }
 
 .contact {
@@ -268,43 +293,272 @@
   }
 }
 
-@media (max-width: 75em) {
-  .mainWrapper {
-    max-width: 80%;
+.testingEducationWrapper {
+  width: 100%;
+  // min-height: 18rem;
+  background-color: rgba(250, 209, 45, 0.8);
+  border-radius: 0.5rem;
+  padding: 3rem 0;
+}
+
+.educationWrapperEven {
+  background-color: rgb(194, 223, 223);
+  // background-color: #000;
+  // color: rgba(250, 209, 45, 0.8);
+  // color: #fff;
+  // background-color: rgb(124, 195, 190, 0.8);
+  // background-color: rgb(106, 142, 165, 0.6);
+}
+
+.testing {
+  display: flex;
+  gap: 2rem;
+
+  & p {
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
   }
 }
 
-@media (max-width: 68.75em) {
+.TestingiconWrapper {
+  width: 2rem;
+  margin: auto;
+}
+
+.testingEducation {
+  padding: 1rem;
+  text-align: center;
+}
+
+.testingEducationHeader {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.testingIcons {
+  font-size: 2rem;
+}
+
+.whoIsWrapper {
+  width: 120%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  // grid-template-columns: 1fr 1fr;
+}
+
+.experienceUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceLi {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  min-height: 6rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px rgb(194, 223, 223);
+  // box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+
+  &:nth-of-type(odd) {
+    box-shadow: 5px 5px 10px rgba(250, 209, 45, 0.7);
+  }
+}
+
+.experienceLiRight {
+  box-shadow: 5px 5px 10px rgba(250, 209, 45, 0.7);
+
+  &:nth-of-type(odd) {
+    box-shadow: 5px 5px 5px rgb(194, 223, 223);
+    // box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.newsUl {
+  list-style: none;
+  transform: translateX(-1rem);
+}
+
+.questionnairesUl {
+  list-style: none;
+  transform: translateX(-1rem);
+  text-align: center;
+}
+
+@media (max-width: 100em) {
+  .whoIsWrapper {
+    width: 145%;
+  }
+}
+
+@media (max-width: 75em) {
   .mainWrapper {
     max-width: 90%;
+  }
+
+  .whoIsWrapper {
+    width: 120%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .whoIsWrapper {
+    flex-direction: column;
+  }
+
+  .familyPicWrapper {
+    padding: 0 2rem;
+  }
+
+  .breanneInfo {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 90vw;
+    padding-right: 0;
+    padding: 0 2rem;
+  }
+
+  .testing {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 45rem;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .testingEducationWrapper {
+    width: 100%;
+    background-color: rgba(250, 209, 45, 0.8);
+
+    &:nth-child(2) {
+      background-color: rgb(194, 223, 223);
+    }
+    &:nth-child(3) {
+      background-color: rgb(194, 223, 223);
+    }
   }
 }
 
 @media (max-width: 56.25em) {
   .whyExperience {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .experience {
+    flex-direction: column;
   }
 
   .whyInfo {
     max-width: 100%;
   }
 
-  .whyExperienceReverse {
-    flex-direction: column;
-  }
-
   .firstImage {
     min-height: 13rem;
     min-width: 13rem;
   }
-}
 
-@media (max-width: 56.25em) {
   .eduNews {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
   }
 
   .lastImg {
     grid-row: 2/3;
+  }
+
+  .whyExperience {
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+    // font-size: 1.2rem;
+  }
+
+  .breanneInfo {
+    text-align: center;
+  }
+
+  .whyInfo {
+    text-align: center;
+  }
+}
+
+.experienceLi {
+  max-width: 30rem;
+}
+
+@media (max-width: 50em) {
+  .header {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .header {
+    width: 100vw;
+    height: 35vh;
+    transform: translateY(-2rem);
+
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .familyPic {
+    // max-width: 100%;
+    width: 100%;
+    // max-height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    // object-fit: fill;
+    // height: 140%;
+    height: 40vh;
+    // overflow: hidden;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .testing {
+    grid-template-columns: 1fr;
+    max-width: 18rem;
+  }
+
+  .testingEducationWrapper {
+    width: 100%;
+    background-color: rgba(250, 209, 45, 0.8);
+
+    &:nth-child(2) {
+      background-color: rgb(194, 223, 223);
+    }
+    &:nth-child(3) {
+      background-color: rgba(250, 209, 45, 0.8);
+    }
+    &:nth-child(4) {
+      background-color: rgb(194, 223, 223);
+    }
+  }
+}
+
+@media (max-width: 25em) {
+  .header {
+    & h1 {
+      font-size: 2.2rem;
+    }
+
+    & h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .breanneInfo {
+    max-width: 100vw;
+  }
+
+  .mainWrapper {
+    max-width: 100%;
   }
 }
