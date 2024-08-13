@@ -1,16 +1,13 @@
 import styles from "./page.module.scss";
-import family from "../public/images/Family.JPG";
+import family from "../public/images/Family.webp";
 import Image from "next/image";
-import quoteOne from "../public/images/Flyer Quote 2.PNG";
-import quoteTwo from "../public/images/Flyer Quote.PNG";
-import newQuote from "../public/images/Quote 3.jpg";
+import newQuote from "../public/images/Quote 3.webp";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
 import { MdOutlineScience } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
-import headshot from "../public/images/Headshot.jpg";
 
 export default function Home() {
   return (
