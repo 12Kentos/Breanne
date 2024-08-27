@@ -8,6 +8,8 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { MdOutlineScience } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
+import testing from "../public/images/Dedrickson-50.webp";
+import testingTwo from "../public/images/Dedrickson-47.jpg";
 
 export default function Home() {
   return (
@@ -24,7 +26,7 @@ export default function Home() {
       </header> */}
       <header className={styles.header}>
         <div className={styles.headerInside}>
-          <h1>Breanne Dedrickson</h1>
+          <h1 className={styles.name}>Breanne Dedrickson</h1>
           <h2>Candidate for Wasatch County School Board</h2>
         </div>
       </header>
@@ -39,7 +41,11 @@ export default function Home() {
 
       <div className={styles.whoIsWrapper}>
         <div className={styles.familyPicWrapper}>
-          <Image src={family} className={styles.familyPic} alt="Family Photo" />
+          <Image
+            src={testing}
+            className={styles.familyPic}
+            alt="Family Photo"
+          />
         </div>
         <div>
           <p className={styles.breanneInfo}>
@@ -161,10 +167,14 @@ export default function Home() {
               President/Vice-President/Member
             </li>
             <li className={styles.experienceLi}>
-              Wasatch Parent Network Volunteer, Classroom Volunteer
+              {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
+              Timpanogos Intermediate School Vice Principal
             </li>
             <li className={styles.experienceLi}>
-              Liahona Preparatory Academy Principal
+              {/* Wasatch County School District (WCSD) Future Schools Committee
+              Member */}
+              Wasatch Parent Network Volunteer, Classroom Volunteer
+              {/* Liahona Preparatory Academy Principal */}
             </li>
 
             <li className={styles.experienceLi}>
@@ -178,18 +188,25 @@ export default function Home() {
             <li
               className={`${styles.experienceLi} ${styles.experienceLiRight}`}
             >
+              {/* Wasatch County School District (WCSD) Future Schools Committee
+              Member */}
+              Liahona Preparatory Academy Principal
+            </li>
+            <li
+              className={`${styles.experienceLi} ${styles.experienceLiRight}`}
+            >
+              {/* Timpanogos Intermediate School Vice Principal */}
+              Wasatch High School (WHS) English Teacher
+              {/* Wasatch County School District (WCSD) Future Schools Committee
+              Member */}
+              {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
+            </li>
+            <li
+              className={`${styles.experienceLi} ${styles.experienceLiRight}`}
+            >
+              {/* Wasatch High School (WHS) English Teacher */}
               Wasatch County School District (WCSD) Future Schools Committee
               Member
-            </li>
-            <li
-              className={`${styles.experienceLi} ${styles.experienceLiRight}`}
-            >
-              Timpanogos Intermediate School Vice Principal
-            </li>
-            <li
-              className={`${styles.experienceLi} ${styles.experienceLiRight}`}
-            >
-              Wasatch High School (WHS) English Teacher
             </li>
             <li
               className={`${styles.experienceLi} ${styles.experienceLiRight}`}
