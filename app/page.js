@@ -1,5 +1,4 @@
 import styles from "./page.module.scss";
-import family from "../public/images/Family.webp";
 import Image from "next/image";
 import newQuote from "../public/images/Quote 3.webp";
 import Link from "next/link";
@@ -9,7 +8,6 @@ import { MdOutlineScience } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import testing from "../public/images/Dedrickson-50.webp";
-import testingTwo from "../public/images/Dedrickson-47.jpg";
 
 export default function Home() {
   return (
