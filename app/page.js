@@ -9,7 +9,8 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { MdOutlineScience } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
-import testing from "../public/images/Dedrickson-50.webp";
+import familyPic from "../public/images/Dedrickson-50.webp";
+import endorsedByPic from "../public/images/IMG_5735.webp";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
       <div className={styles.whoIsWrapper}>
         <div className={styles.familyPicWrapper}>
           <Image
-            src={testing}
+            src={familyPic}
             className={styles.familyPic}
             alt="Family Photo"
           />
@@ -275,6 +276,27 @@ export default function Home() {
               alt="Education Quote: Education is the most powerful weapon which you can use to change the world. -Nelson Mandela"
             />
           </div> */}
+        </div>
+      </div>
+
+      {/* Endoresed By */}
+
+      <div className={styles.endorsedByWrapper}>
+        <h2 className={styles.endorsedByHeader}>Endorsement</h2>
+        <div className={styles.endorsedByContentWrapper}>
+          <p className={styles.endorsedText}>
+            "I full heartedly endorse Breanne Dedrickson as a candidate for
+            school board. It has been my privilege to work with Breanne both as
+            a fellow educator and as a parent at Daniels Canyon Elementary.
+            Breanne has the skills and knowledge to represent her community well
+            on the school board. She is a master at listening and discerning
+            student and parent needs. She cares about individuals! Breanne isn’t
+            afraid to make tough decisions when needed. I could always trust her
+            to listen carefully, weigh the possibilities, and move forward with
+            a positive plan. I know you would see that same careful thought as a
+            member of the Wasatch County School Board. She is awesome!"
+          </p>
+          <Image src={endorsedByPic} className={styles.endorsedPic} />
         </div>
       </div>
 

@@ -390,9 +390,57 @@
   text-align: center;
 }
 
+.endorsedByHeader {
+  margin-top: 2rem;
+}
+
+.endorsedByWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 80%;
+}
+
+.endorsedByContentWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.endorsedText {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  position: relative;
+
+  &::after {
+    content: "- DeAnna Lloyd";
+    font-style: italic;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 15rem;
+  }
+}
+
+.endorsedPic {
+  // width: 25%;
+  // height: 25%;
+  width: 16rem;
+  height: 13rem;
+  border-radius: 0.5rem;
+}
+
 @media (max-width: 100em) {
   .whoIsWrapper {
     width: 145%;
+  }
+
+  .endorsedByWrapper {
+    max-width: 100%;
+  }
+
+  .endorsedPic {
+    width: 18rem;
+    height: 15rem;
   }
 }
 
@@ -482,6 +530,16 @@
   .whyInfo {
     text-align: center;
   }
+
+  .endorsedByContentWrapper {
+    flex-direction: column;
+  }
+
+  .endorsedPic {
+    margin-top: 3rem;
+    width: 75%;
+    height: 75%;
+  }
 }
 
 .experienceLi {
@@ -509,7 +567,9 @@
     height: 60vw;
   }
 
-  .familyPic {
+  .endorsedPic {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -531,6 +591,13 @@
     }
     &:nth-child(4) {
       background-color: rgb(194, 223, 223);
+    }
+  }
+
+  .endorsedText {
+    &::after {
+      bottom: -3rem;
+      left: 10rem;
     }
   }
 }
