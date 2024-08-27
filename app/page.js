@@ -10,12 +10,17 @@ import { MdOutlineScience } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import testing from "../public/images/Dedrickson-50.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [windowSmall, setWindowSmall] = useState(window.innerWidth <= 900);
+  const [windowSmall, setWindowsmall] = useState(false);
 
-  console.log(windowSmall);
+  useEffect(() => {
+    const width = windows.innerWidth;
+    if (width <= 900) {
+      setWindowsmall(true);
+    }
+  }, []);
 
   return (
     <main className={styles.mainWrapper}>
