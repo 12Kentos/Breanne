@@ -16,7 +16,7 @@ export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
 
   useEffect(() => {
-    const width = windows.innerWidth;
+    const width = window.innerWidth;
     if (width <= 900) {
       setWindowsmall(true);
     }
