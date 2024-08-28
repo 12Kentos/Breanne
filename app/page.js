@@ -12,6 +12,7 @@ import { BiWorld } from "react-icons/bi";
 import familyPic from "../public/images/Dedrickson-50.webp";
 import endorsedByPic from "../public/images/IMG_5735.webp";
 import { useEffect, useState } from "react";
+import { RiQuestionnaireLine } from "react-icons/ri";
 
 export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
@@ -91,7 +92,10 @@ export default function Home() {
             Breanne is a passionate educator and parent with a proven track
             record. She now wants to be involved as a policymaker to influence
             Wasatch County schools for good.{" "}
-            <b> Breanne would love your vote of support in November!</b>
+            <b className={styles.callToAction}>
+              {" "}
+              Breanne would love your vote of support in November!
+            </b>
           </p>
         </div>
       </div>
@@ -285,7 +289,7 @@ export default function Home() {
         <h2 className={styles.endorsedByHeader}>Endorsement</h2>
         <div className={styles.endorsedByContentWrapper}>
           <p className={styles.endorsedText}>
-            "I full heartedly endorse Breanne Dedrickson as a candidate for
+            "I fullheartedly endorse Breanne Dedrickson as a candidate for
             school board. It has been my privilege to work with Breanne both as
             a fellow educator and as a parent at Daniels Canyon Elementary.
             Breanne has the skills and knowledge to represent her community well
@@ -354,7 +358,8 @@ export default function Home() {
           <div className={styles.questionnaires}>
             <h2>Breanne's Questionnaires</h2>
             <ul className={styles.questionnairesUl}>
-              <li>
+              <li className={styles.questionariesLi}>
+                <RiQuestionnaireLine className={styles.questionIcon} />
                 <a
                   href="/files/Valley.pdf"
                   download={false}
@@ -364,7 +369,8 @@ export default function Home() {
                   Heber Valley Life
                 </a>
               </li>
-              <li>
+              <li className={styles.questionariesLi}>
+                <RiQuestionnaireLine className={styles.questionIcon} />
                 <a
                   href="/files/School Board.pdf"
                   download={false}
@@ -376,6 +382,27 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          {/* <div className={styles.questionnaires}>
+            <h2>Breanne's Questionnaires</h2>
+            <div className={styles.questionnairesUl}>
+              <a
+                href="/files/Valley.pdf"
+                download={false}
+                target="_blank"
+                className={styles.questionnairesLinks}
+              >
+                Heber Valley Life
+              </a>
+              <a
+                href="/files/School Board.pdf"
+                download={false}
+                target="_blank"
+                className={styles.questionnairesLinks}
+              >
+                Wasatch Teachers' Association
+              </a>
+            </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.contact}>

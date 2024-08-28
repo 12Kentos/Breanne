@@ -121,6 +121,10 @@
   padding-right: 2rem;
 }
 
+.callToAction {
+  font-size: clamp(1.2rem, 1.4vw, 1.5rem);
+}
+
 .imagesWrapper {
   display: flex;
   gap: 2rem;
@@ -412,6 +416,14 @@
   font-size: 1.2rem;
   position: relative;
 
+  &::before {
+    content: "Retired WCSD Principal";
+    position: absolute;
+    font-size: 0.6rem;
+    bottom: -3.2rem;
+    right: 0;
+  }
+
   &::after {
     content: "- DeAnna Lloyd";
     font-style: italic;
@@ -428,6 +440,18 @@
   width: 16rem;
   height: 13rem;
   border-radius: 0.5rem;
+}
+
+.questionIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.questionariesLi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 @media (max-width: 100em) {
@@ -469,6 +493,10 @@
     max-width: 90vw;
     padding-right: 0;
     padding: 0 2rem;
+  }
+
+  .callToAction {
+    font-size: clamp(1.3rem, 1.4vw, 1.5rem);
   }
 
   .testing {
@@ -596,6 +624,12 @@
   }
 
   .endorsedText {
+    &::before {
+      bottom: -4rem;
+      left: 10.8rem;
+      font-size: 0.7rem;
+    }
+
     &::after {
       bottom: -3rem;
       left: 10rem;
