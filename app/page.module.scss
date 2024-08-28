@@ -442,16 +442,22 @@
   border-radius: 0.5rem;
 }
 
+// .questionIcon {
+//   font-size: 1.5rem;
+//   margin-right: 1rem;
+// }
+
 .questionIcon {
   font-size: 1.5rem;
   margin-right: 1rem;
+  transform: translateY(25%);
 }
 
 .questionariesLi {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-start;
+  // text-align: left;
 }
 
 @media (max-width: 100em) {
@@ -621,6 +627,11 @@
     &:nth-child(4) {
       background-color: rgb(194, 223, 223);
     }
+  }
+
+  .questionariesLi {
+    // justify-content: center;
+    // text-align: center;
   }
 
   .endorsedText {
