@@ -90,7 +90,7 @@ export default function Home() {
             Future Schools committees. She was also active in coordinating
             community efforts to support the first bond for the new high school.
             Breanne is a passionate educator and parent with a proven track
-            record. She now wants to be involved as a policy maker to ensure
+            record. She now wants to be involved as a policymaker to ensure
             Wasatch County School District has the policies, resources, and
             support to provide the best educational experience for every child
             in a financially responsible and transparent manner.
