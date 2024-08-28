@@ -12,7 +12,6 @@ import { BiWorld } from "react-icons/bi";
 import familyPic from "../public/images/Dedrickson-50.webp";
 import endorsedByPic from "../public/images/IMG_5735.webp";
 import { useEffect, useState } from "react";
-import { RiQuestionnaireLine } from "react-icons/ri";
 
 export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
@@ -26,28 +25,12 @@ export default function Home() {
 
   return (
     <main className={styles.mainWrapper}>
-      {/* <header className={styles.header}>
-        <div className={styles.headerInside}>
-          <h1 className={styles.firstName}>Breanne</h1>
-          <h1 className={styles.lastName}>Dedrickson</h1>
-          <div className={styles.position}>
-            <p className={styles.wasatch}>Wasatch County School Board</p>
-            <p className={styles.seat}>Seat G County South</p>
-          </div>
-        </div>
-      </header> */}
       <header className={styles.header}>
         <div className={styles.headerInside}>
           <h1 className={styles.name}>Breanne Dedrickson</h1>
           <h2>Candidate for Wasatch County School Board</h2>
         </div>
       </header>
-      {/* <div className={styles.imagesWrapper}>
-        <Image
-          src={Headshot}
-          className={`${styles.mainImages} ${styles.headshot}`}
-        />
-      </div> */}
 
       <h1 className={styles.mainHeading}>Meet Breanne</h1>
 
@@ -56,7 +39,7 @@ export default function Home() {
           <Image
             src={familyPic}
             className={styles.familyPic}
-            alt="Family Photo"
+            alt="Picture of Breanne Dedrickson and her family"
           />
         </div>
         <div>
@@ -179,11 +162,6 @@ export default function Home() {
         <h2>Breanne's Experience</h2>
         <div className={`${styles.whyExperience} ${styles.experience}`}>
           <ul className={styles.experienceUl}>
-            {/* <li className={styles.experienceLi}>
-              Daniel’s Canyon Elementary School Community Council
-              President/Vice-President/Member
-            </li> */}
-
             {windowSmall ? (
               ""
             ) : (
@@ -194,31 +172,21 @@ export default function Home() {
             )}
 
             <li className={styles.experienceLi}>
-              {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
               Timpanogos Intermediate School Vice Principal
             </li>
             {windowSmall ? (
               <li className={`${styles.experienceLi}`}>
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
                 Liahona Preparatory Academy Principal
               </li>
             ) : (
               <li className={styles.experienceLi}>
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
                 Wasatch Parent Network Volunteer, Classroom Volunteer
-                {/* Liahona Preparatory Academy Principal */}
               </li>
             )}
 
             {windowSmall ? (
               <li className={`${styles.experienceLi}`}>
-                {/* Timpanogos Intermediate School Vice Principal */}
                 Wasatch High School (WHS) English Teacher
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
-                {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
               </li>
             ) : (
               <li className={styles.experienceLi}>
@@ -244,16 +212,12 @@ export default function Home() {
               <li
                 className={`${styles.experienceLi} ${styles.experienceLiRight}`}
               >
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
                 Wasatch Parent Network Volunteer, Classroom Volunteer
               </li>
             ) : (
               <li
                 className={`${styles.experienceLi} ${styles.experienceLiRight}`}
               >
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
                 Liahona Preparatory Academy Principal
               </li>
             )}
@@ -268,18 +232,13 @@ export default function Home() {
               <li
                 className={`${styles.experienceLi} ${styles.experienceLiRight}`}
               >
-                {/* Timpanogos Intermediate School Vice Principal */}
                 Wasatch High School (WHS) English Teacher
-                {/* Wasatch County School District (WCSD) Future Schools Committee
-              Member */}
-                {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
               </li>
             )}
 
             <li
               className={`${styles.experienceLi} ${styles.experienceLiRight}`}
             >
-              {/* Wasatch High School (WHS) English Teacher */}
               Wasatch County School District (WCSD) Future Schools Committee
               Member
             </li>
@@ -294,13 +253,6 @@ export default function Home() {
               WHS Faculty Council Vice President
             </li>
           </ul>
-          {/* <div className={styles.quoteWrapper}>
-            <Image
-              src={headshot}
-              className={styles.firstImage}
-              alt="Education Quote: Education is the most powerful weapon which you can use to change the world. -Nelson Mandela"
-            />
-          </div> */}
         </div>
       </div>
 
@@ -321,18 +273,15 @@ export default function Home() {
             a positive plan. I know you would see that same careful thought as a
             member of the Wasatch County School Board. She is awesome!"
           </p>
-          <Image src={endorsedByPic} className={styles.endorsedPic} />
+          <Image
+            src={endorsedByPic}
+            className={styles.endorsedPic}
+            alt="Picture of Breanne Dedrickson and DeAnna Lloyd"
+          />
         </div>
       </div>
 
       <div className={styles.eduNews}>
-        {/* <div className={`${styles.quoteWrapper} ${styles.lastImg}`}>
-          <Image
-            src={quoteOne}
-            className={styles.firstImage}
-            alt="Education Quote: An Investment in knowledge pays the best interest. -Benjamin Franklin"
-          />
-        </div> */}
         <div className={styles.news}>
           <h2>Breanne in the News</h2>
           <ul className={styles.newsUl}>
@@ -355,32 +304,10 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.rightInfo}>
-          {/* <div className={styles.news}>
-            <h2>Breanne in the News</h2>
-            <ul>
-              <li>
-                <a
-                  href="https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats"
-                  target="_blank"
-                >
-                  https://www.kpcw.org/wasatch-county/2024-01-31/six-candidates-run-for-three-wasatch-county-school-board-seats
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/"
-                  target="_blank"
-                >
-                  https://www.parkrecord.com/news/former-wasatch-county-teacher-running-for-school-board/
-                </a>
-              </li>
-            </ul>
-          </div> */}
           <div className={styles.questionnaires}>
             <h2>Breanne's Questionnaires</h2>
             <ul className={styles.questionnairesUl}>
               <li className={styles.questionariesLi}>
-                {/* <RiQuestionnaireLine className={styles.questionIcon} /> */}
                 <a
                   href="/files/Valley.pdf"
                   download={false}
@@ -391,7 +318,6 @@ export default function Home() {
                 </a>
               </li>
               <li className={styles.questionariesLi}>
-                {/* <RiQuestionnaireLine className={styles.questionIcon} /> */}
                 <a
                   href="/files/School Board.pdf"
                   download={false}
@@ -403,27 +329,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          {/* <div className={styles.questionnaires}>
-            <h2>Breanne's Questionnaires</h2>
-            <div className={styles.questionnairesUl}>
-              <a
-                href="/files/Valley.pdf"
-                download={false}
-                target="_blank"
-                className={styles.questionnairesLinks}
-              >
-                Heber Valley Life
-              </a>
-              <a
-                href="/files/School Board.pdf"
-                download={false}
-                target="_blank"
-                className={styles.questionnairesLinks}
-              >
-                Wasatch Teachers' Association
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className={styles.contact}>
@@ -445,7 +350,10 @@ export default function Home() {
             }
             target="_blank"
           >
-            <FaFacebookSquare className={styles.facebook} />
+            <FaFacebookSquare
+              className={styles.facebook}
+              title="Facebook link"
+            />
           </Link>
         </div>
       </div>
