@@ -65,7 +65,7 @@ export default function Home() {
             playing "school" as a child and always aspired to be a teacher. An
             avid reader, Breanne combined her two great loves and chose to study
             English Teaching at Snow College and then Utah State University.
-            Post a study abroad experience to Cuernavaca, Mexico and student
+            After a study abroad experience to Cuernavaca, Mexico and student
             teaching at Logan High School, Breanne was hired to teach 9-10th
             grade English, ACT Prep, and English Language Learner classes at
             Wasatch High School. After spending three years teaching as Ms.
@@ -85,13 +85,15 @@ export default function Home() {
             School for two years and has been the principal at Liahona
             Preparatory Academy for the last nine years. Breanne is an involved
             parent who has served in her children's school as a School Community
-            Council member and Wasatch Parent Network volunteer. She's served at
-            the district level as a committee member on the Safe Schools and
+            Council member and Wasatch Parent Network volunteer. She has served
+            at the district level as a committee member on the Safe Schools and
             Future Schools committees. She was also active in coordinating
             community efforts to support the first bond for the new high school.
             Breanne is a passionate educator and parent with a proven track
-            record. She now wants to be involved as a policymaker to influence
-            Wasatch County schools for good.{" "}
+            record. She now wants to be involved as a policy maker to ensure
+            Wasatch County School District has the policies, resources, and
+            support to provide the best educational experience for every child
+            in a financially responsible and transparent manner. <br></br>
             <b className={styles.callToAction}>
               {" "}
               Breanne would love your vote of support in November!
@@ -177,10 +179,20 @@ export default function Home() {
         <h2>Breanne's Experience</h2>
         <div className={`${styles.whyExperience} ${styles.experience}`}>
           <ul className={styles.experienceUl}>
-            <li className={styles.experienceLi}>
+            {/* <li className={styles.experienceLi}>
               Daniel’s Canyon Elementary School Community Council
               President/Vice-President/Member
-            </li>
+            </li> */}
+
+            {windowSmall ? (
+              ""
+            ) : (
+              <li className={styles.experienceLi}>
+                Daniel’s Canyon Elementary School Community Council
+                President/Vice-President/Member
+              </li>
+            )}
+
             <li className={styles.experienceLi}>
               {/* Wasatch Parent Network Volunteer, Classroom Volunteer */}
               Timpanogos Intermediate School Vice Principal
@@ -212,6 +224,15 @@ export default function Home() {
               <li className={styles.experienceLi}>
                 WCSD Safe Schools Committee Member
               </li>
+            )}
+
+            {windowSmall ? (
+              <li className={styles.experienceLi}>
+                Daniel’s Canyon Elementary School Community Council
+                President/Vice-President/Member
+              </li>
+            ) : (
+              ""
             )}
 
             <li className={styles.experienceLi}>
@@ -366,7 +387,7 @@ export default function Home() {
                   target="_blank"
                   className={styles.questionnairesLinks}
                 >
-                  Heber Valley Life
+                  Heber Valley Life Link
                 </a>
               </li>
               <li className={styles.questionariesLi}>
@@ -377,7 +398,7 @@ export default function Home() {
                   target="_blank"
                   className={styles.questionnairesLinks}
                 >
-                  Wasatch Teachers' Association
+                  Wasatch Teachers' Association Link
                 </a>
               </li>
             </ul>
