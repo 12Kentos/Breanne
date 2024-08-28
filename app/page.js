@@ -93,7 +93,7 @@ export default function Home() {
             record. She now wants to be involved as a policy maker to ensure
             Wasatch County School District has the policies, resources, and
             support to provide the best educational experience for every child
-            in a financially responsible and transparent manner. <br></br>
+            in a financially responsible and transparent manner.
             <b className={styles.callToAction}>
               {" "}
               Breanne would love your vote of support in November!
@@ -380,7 +380,7 @@ export default function Home() {
             <h2>Breanne's Questionnaires</h2>
             <ul className={styles.questionnairesUl}>
               <li className={styles.questionariesLi}>
-                <RiQuestionnaireLine className={styles.questionIcon} />
+                {/* <RiQuestionnaireLine className={styles.questionIcon} /> */}
                 <a
                   href="/files/Valley.pdf"
                   download={false}
@@ -391,7 +391,7 @@ export default function Home() {
                 </a>
               </li>
               <li className={styles.questionariesLi}>
-                <RiQuestionnaireLine className={styles.questionIcon} />
+                {/* <RiQuestionnaireLine className={styles.questionIcon} /> */}
                 <a
                   href="/files/School Board.pdf"
                   download={false}
