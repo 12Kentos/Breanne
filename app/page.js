@@ -324,7 +324,7 @@ export default function Home() {
                   target="_blank"
                   className={styles.questionnairesLinks}
                 >
-                  Wasatch Teachers' Association Link
+                  Wasatch Education Association Link
                 </a>
               </li>
             </ul>
