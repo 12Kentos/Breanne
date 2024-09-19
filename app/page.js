@@ -1,8 +1,5 @@
 "use client";
 
-// Breanne Testing Site
-// Real Testing
-
 import styles from "./page.module.scss";
 import Image from "next/image";
 import newQuote from "../public/images/Quote 3.webp";
@@ -15,116 +12,9 @@ import { BiWorld } from "react-icons/bi";
 import familyPic from "../public/images/Dedrickson-50.webp";
 import endorsedByPic from "../public/images/IMG_5735.webp";
 import { useEffect, useState } from "react";
-import wea from "../public/images/23WEALOGO.png";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
-import trudie from "../public/images/Trudie Peterson.jpg";
-import natalie from "../public/images/Natalie P Hansen.jpg";
-import sarah from "../public/images/Sarah Lindley-Mair.jpg";
 
 export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
-  const [endorsmentState, setEndorsmentState] = useState(0);
-
-  const contentForEndorsment = [
-    <div className={`${styles.endorsedByContentWrapper}`}>
-      <p className={styles.endorsedText}>
-        "I fullheartedly endorse Breanne Dedrickson as a candidate for school
-        board. It has been my privilege to work with Breanne both as a fellow
-        educator and as a parent at Daniels Canyon Elementary. Breanne has the
-        skills and knowledge to represent her community well on the school
-        board. She is a master at listening and discerning student and parent
-        needs. She cares about individuals! Breanne isn’t afraid to make tough
-        decisions when needed. I could always trust her to listen carefully,
-        weigh the possibilities, and move forward with a positive plan. I know
-        you would see that same careful thought as a member of the Wasatch
-        County School Board. She is awesome!"
-        <span className={`${styles.author} ${styles.deanna}`}>
-          - DeAnna Lloyd (Retired WCSD Principal)
-        </span>
-      </p>
-      <Image
-        src={endorsedByPic}
-        className={styles.endorsedPic}
-        alt="Picture of Breanne Dedrickson and DeAnna Lloyd"
-      />
-    </div>,
-
-    <div className={`${styles.endorsedByContentWrapper}`}>
-      <p className={styles.endorsedText}>
-        “I have known Breanne as an educator, administrator, and now as an
-        involved parent in the school district. Having seen her in action, I can
-        fully endorse her as a member of the School Board. She is passionate
-        about quality education and academic achievement for all students. And
-        when elected, I know she will help take our district to new heights.”
-        <span className={styles.author}>Natalie P. Hansen</span>
-      </p>
-      <Image
-        src={natalie}
-        className={`${styles.endorsedPic} ${styles.tallerPic}`}
-        alt="Picture of Breanne Dedrickson and Natalie P. Hansen"
-      />
-    </div>,
-
-    <div className={styles.endorsedByContentWrapper}>
-      <p className={styles.endorsedText}>
-        "Breanne is very passionate about education and ensuring students' needs
-        are met. I have known Breanne for a few years. She sincerely cares about
-        people. We were able to work side-by-side with the youth in the valley,
-        and I saw personally her passion for teaching and helping others. When a
-        decision needed to be made, she listened to all concerns and would
-        decide based on what was best for the circumstances. Her enthusiasm and
-        hard work will get us the results we need!"
-        <span className={styles.author}>Sarah Lindley-Mair</span>
-      </p>
-      <Image
-        src={sarah}
-        className={`${styles.endorsedPic} ${styles.tallerPic}`}
-        alt="Picture of Breanne Dedrickson and Sarah Lindley-Mair"
-      />
-    </div>,
-
-    <div className={styles.endorsedByContentWrapper}>
-      <p className={styles.endorsedText}>
-        "Breanne taught my kids English when they went to Wasatch High. She was
-        not only a great teacher who had high expectations for her students, but
-        everyone loved having her for a teacher. I appreciate her values and her
-        love for the education of our kids. Vote Breanne for Wasatch County
-        School Board."
-        <span className={styles.author}>Trudie Peterson</span>
-      </p>
-      <Image
-        src={trudie}
-        className={`${styles.endorsedPic} ${styles.tallerPic}`}
-        alt="Picture of Breanne Dedrickson and Trudie Peterson"
-      />
-    </div>,
-
-    <div className={styles.weaWrapper}>
-      <div className={styles.weaImgWrapper}>
-        <Image
-          src={wea}
-          className={styles.weaImage}
-          alt="Image of Wasatch Education Association"
-        />
-      </div>
-    </div>,
-  ];
-
-  const onClickHandlerLeft = () => {
-    if (endorsmentState > 0) {
-      setEndorsmentState(endorsmentState - 1);
-    } else {
-      setEndorsmentState(contentForEndorsment.length - 1);
-    }
-  };
-
-  const onClickHandlerRight = () => {
-    if (endorsmentState < contentForEndorsment.length - 1) {
-      setEndorsmentState(endorsmentState + 1);
-    } else {
-      setEndorsmentState(0);
-    }
-  };
 
   useEffect(() => {
     const width = window.innerWidth;
@@ -368,35 +258,9 @@ export default function Home() {
 
       {/* Endoresed By */}
 
-      {/* When I get the third endorsment add in a carousel design */}
-
       <div className={styles.endorsedByWrapper}>
-        <h2 className={styles.endorsedByHeader}>Endoresed By</h2>
-        <div className={styles.endorsedByInfoWrapper}>
-          <button
-            className={`${styles.carouselBtn} ${styles.leftBtn}`}
-            onClick={onClickHandlerLeft}
-          >
-            <FaAngleLeft className={styles.icon} />
-          </button>
-          {/* <div className={styles.weaWrapper}>
-            <div className={styles.weaImgWrapper}>
-              <Image
-                src={wea}
-                className={styles.weaImage}
-                alt="Image of Wasatch Education Association"
-              />
-            </div>
-          </div> */}
-          {contentForEndorsment[endorsmentState]}
-          <button
-            className={`${styles.carouselBtn} ${styles.rightBtn}`}
-            onClick={onClickHandlerRight}
-          >
-            <FaAngleRight className={styles.icon} />
-          </button>
-        </div>
-        {/* <div className={styles.endorsedByContentWrapper}>
+        <h2 className={styles.endorsedByHeader}>Endorsement</h2>
+        <div className={styles.endorsedByContentWrapper}>
           <p className={styles.endorsedText}>
             "I fullheartedly endorse Breanne Dedrickson as a candidate for
             school board. It has been my privilege to work with Breanne both as
@@ -414,7 +278,7 @@ export default function Home() {
             className={styles.endorsedPic}
             alt="Picture of Breanne Dedrickson and DeAnna Lloyd"
           />
-        </div> */}
+        </div>
       </div>
 
       <div className={styles.eduNews}>
