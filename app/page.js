@@ -12,6 +12,11 @@ import { BiWorld } from "react-icons/bi";
 import familyPic from "../public/images/Dedrickson-50.webp";
 import endorsedByPic from "../public/images/IMG_5735.webp";
 import { useEffect, useState } from "react";
+import wea from "../public/images/23WEALOGO.webp";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import trudie from "../public/images/Trudie Peterson.webp";
+import natalie from "../public/images/Natalie P Hansen.webp";
+import sarah from "../public/images/Sarah Lindley-Mair.webp";
 
 export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
