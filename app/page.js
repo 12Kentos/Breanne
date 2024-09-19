@@ -25,7 +25,7 @@ export default function Home() {
   const [endorsmentState, setEndorsmentState] = useState(0);
 
   const contentForEndorsment = [
-    <div className={styles.endorsedByContentWrapper}>
+    <div className={`${styles.endorsedByContentWrapper}`}>
       <p className={styles.endorsedText}>
         "I fullheartedly endorse Breanne Dedrickson as a candidate for school
         board. It has been my privilege to work with Breanne both as a fellow
@@ -48,7 +48,7 @@ export default function Home() {
       />
     </div>,
 
-    <div className={styles.endorsedByContentWrapper}>
+    <div className={`${styles.endorsedByContentWrapper}`}>
       <p className={styles.endorsedText}>
         “I have known Breanne as an educator, administrator, and now as an
         involved parent in the school district. Having seen her in action, I can
@@ -87,8 +87,8 @@ export default function Home() {
         "Breanne taught my kids English when they went to Wasatch High. She was
         not only a great teacher who had high expectations for her students, but
         everyone loved having her for a teacher. I appreciate her values and her
-        love for the education of our kids. Vote Breanne for Wasatch County"
-        School Board.
+        love for the education of our kids. Vote Breanne for Wasatch County
+        School Board."
         <span className={styles.author}>Trudie Peterson</span>
       </p>
       <Image
