@@ -36,6 +36,12 @@
   }
 }
 
+.buttonName {
+  height: 1px;
+  width: 1px;
+  color: transparent;
+}
+
 .name {
   text-transform: uppercase;
   font-size: 3.3rem;
@@ -385,28 +391,21 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  transition: 1ms;
 }
 
 .endorsedText {
   line-height: 1.5;
   font-size: 1.2rem;
   position: relative;
+}
 
-  &::before {
-    content: "Retired WCSD Principal";
-    position: absolute;
-    font-size: 0.8rem;
-    bottom: -3.4rem;
-    right: 0;
-  }
-
-  &::after {
-    content: "- DeAnna Lloyd";
-    font-style: italic;
-    position: absolute;
-    bottom: -2.5rem;
-    right: 0;
-  }
+.author {
+  position: absolute;
+  font-style: italic;
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0;
 }
 
 .endorsedPic {
@@ -415,10 +414,77 @@
   border-radius: 0.5rem;
 }
 
+.tallerPic {
+  height: auto;
+}
+
+.endorsedByInfoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.carouselBtn {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(39, 47, 60);
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  &:hover {
+    transition: 500ms;
+    cursor: pointer;
+    background-color: rgb(249, 208, 44);
+  }
+}
+
+.rightBtn {
+  right: -3rem;
+}
+
+.leftBtn {
+  left: -3rem;
+}
+
 .questionIcon {
   font-size: 1.5rem;
   margin-right: 1rem;
   transform: translateY(25%);
+}
+
+.weaWrapper {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.weaImgWrapper {
+  position: relative;
+  max-width: 20rem;
+  max-height: 20rem;
+
+  &::after {
+    content: "- Endorsed by local teachers who are members of the Wasatch Education Association";
+    font-size: 0.8rem;
+    font-style: italic;
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+  }
+}
+
+.weaImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 100em) {
@@ -492,6 +558,10 @@
     gap: 1.5rem;
   }
 
+  .endorsedByWrapper {
+    min-width: 60vw;
+  }
+
   .experience {
     flex-direction: column;
   }
@@ -537,6 +607,30 @@
     margin-top: 3rem;
     width: 75%;
     height: 75%;
+  }
+
+  .tallerPic {
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  // .carouselBtn {
+  //   background-color: #fff;
+  //   border-radius: 100%;
+  //   padding: 1rem;
+  //   font-size: 1.5rem;
+  // }
+
+  .rightBtn {
+    right: 20vw;
+    bottom: -5rem;
+    top: auto;
+  }
+
+  .leftBtn {
+    left: 20vw;
+    bottom: -5rem;
+    top: auto;
   }
 }
 
@@ -603,6 +697,10 @@
       bottom: -3rem;
       left: 10rem;
     }
+  }
+
+  .deanna {
+    bottom: -3.5rem;
   }
 }
 
