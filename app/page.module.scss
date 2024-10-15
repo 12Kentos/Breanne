@@ -376,6 +376,12 @@
   text-align: center;
 }
 
+.questionariesLi {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
 .endorsedByHeader {
   margin-top: 2rem;
 }

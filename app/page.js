@@ -18,6 +18,9 @@ import trudie from "../public/images/Trudie Peterson.webp";
 import natalie from "../public/images/Natalie P Hansen.webp";
 import sarah from "../public/images/Sarah Lindley-Mair.webp";
 import rigby from "../public/images/rigby.webp";
+import ryanAndAmy from "../public/images/RyanandAmy.webp";
+import bobAndMerle from "../public/images/BobandMerle.webp";
+import jacksonAndKenna from "../public/images/JacksonandKenna.webp";
 
 export default function Home() {
   const [windowSmall, setWindowsmall] = useState(false);
@@ -109,6 +112,48 @@ export default function Home() {
         src={rigby}
         className={`${styles.endorsedPic} ${styles.tallerPic}`}
         alt="Picture of Breanne Dedrickson and Blaine & Shantel Rigby"
+      />
+    </div>,
+
+    <div className={styles.endorsedByContentWrapper}>
+      <p className={styles.endorsedText}>
+        “Breanne is one of the kindest people that we have ever met. She’s
+        passionate about education and making a real difference in the lives of
+        her students. She would be amazing on the school board.”
+        <span className={styles.author}>- Jackson & Kenna Gordon</span>
+      </p>
+      <Image
+        src={jacksonAndKenna}
+        className={`${styles.endorsedPic} ${styles.tallerPic}`}
+        alt="Picture of Breanne Dedrickson and Jackson & Kenna Gordon"
+      />
+    </div>,
+
+    <div className={styles.endorsedByContentWrapper}>
+      <p className={styles.endorsedText}>
+        “We are thrilled to support Breanne for the Wasatch County School Board.
+        Her genuine willingness to listen and engage with our concerns and
+        aspirations for local schools has continually impressed us. Breanne’s
+        passion for addressing the needs of our district is evident, and we are
+        confident she will make a meaningful and positive impact!”
+        <span className={styles.author}>- Ryan & Amy Kohler</span>
+      </p>
+      <Image
+        src={ryanAndAmy}
+        className={`${styles.endorsedPic} ${styles.tallerPic}`}
+        alt="Picture of Breanne Dedrickson and Ryan & Amy Kohler"
+      />
+    </div>,
+
+    <div className={styles.endorsedByContentWrapper}>
+      <p className={styles.endorsedText}>
+        “Breanne has our vote!”
+        <span className={styles.author}>- Bob & Merle Davis</span>
+      </p>
+      <Image
+        src={bobAndMerle}
+        className={`${styles.endorsedPic} ${styles.tallerPic}`}
+        alt="Picture of Breanne Dedrickson and Bob & Merel Davis"
       />
     </div>,
 
@@ -393,6 +438,15 @@ export default function Home() {
             <FaAngleLeft className={styles.icon} />
             <p className={styles.buttonName}>left image carousel button</p>
           </button>
+          {/* <div className={styles.weaWrapper}>
+            <div className={styles.weaImgWrapper}>
+              <Image
+                src={wea}
+                className={styles.weaImage}
+                alt="Image of Wasatch Education Association"
+              />
+            </div>
+          </div> */}
           {contentForEndorsment[endorsmentState]}
           <button
             className={`${styles.carouselBtn} ${styles.rightBtn}`}
@@ -403,6 +457,25 @@ export default function Home() {
             <p className={styles.buttonName}>left image carousel button</p>
           </button>
         </div>
+        {/* <div className={styles.endorsedByContentWrapper}>
+          <p className={styles.endorsedText}>
+            "I fullheartedly endorse Breanne Dedrickson as a candidate for
+            school board. It has been my privilege to work with Breanne both as
+            a fellow educator and as a parent at Daniels Canyon Elementary.
+            Breanne has the skills and knowledge to represent her community well
+            on the school board. She is a master at listening and discerning
+            student and parent needs. She cares about individuals! Breanne isn’t
+            afraid to make tough decisions when needed. I could always trust her
+            to listen carefully, weigh the possibilities, and move forward with
+            a positive plan. I know you would see that same careful thought as a
+            member of the Wasatch County School Board. She is awesome!"
+          </p>
+          <Image
+            src={endorsedByPic}
+            className={styles.endorsedPic}
+            alt="Picture of Breanne Dedrickson and DeAnna Lloyd"
+          />
+        </div> */}
       </div>
 
       <div className={styles.eduNews}>
@@ -451,6 +524,24 @@ export default function Home() {
                   Wasatch Education Association Link
                 </a>
               </li>
+              <li className={styles.questionariesLi}>
+                <a
+                  href="https://www.youtube.com/watch?v=F9dlV5hlOzY"
+                  target="_blank"
+                  className={styles.questionnairesLinks}
+                >
+                  Wasatch Taxpayers’ Association Interview
+                </a>
+              </li>
+              {/* <li className={styles.questionariesLi}>
+                <a
+                  href="https://hebervalleylife.com/meet-the-candidates/"
+                  target="_blank"
+                  className={styles.questionnairesLinks}
+                >
+                  Heber Valley Life Meet The Candidates Link
+                </a>
+              </li> */}
             </ul>
           </div>
         </div>
